@@ -28,6 +28,7 @@ allprojects {
         url geodeRepositoryUrl
       }
     }
+    mavenLocal()
     mavenCentral()
     maven {
       url 'http://repository.apache.org/snapshots'
@@ -55,6 +56,8 @@ subprojects {
 
   dependencies {
     compile "org.apache.geode:geode-core:$geodeVersion"
+    compile "org.apache.geode:geode-client-protocol:$geodeVersion"
+    compile "org.apache.geode:geode-protobuf:$geodeVersion"
 
     testCompile "com.jayway.awaitility:awaitility:$awaitilityVersion"
     testCompile "junit:junit:$junitVersion"

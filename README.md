@@ -82,6 +82,7 @@ tutorial.
 
 ### Advanced
 
+*  [Protobuf-based Protocol](protobuf/README.md)
 *  WAN Gateway
 *  Durable subscriptions
 *  Delta propagation
